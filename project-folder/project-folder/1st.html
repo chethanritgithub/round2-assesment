@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Grid</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div id="team-grid">
+        <!-- Example team cards - Replace with your team data -->
+        <div class="team-card" data-team-id="1">
+            <h2>Team 1</h2>
+            <p>MI</p>
+            <img src="../team-logo/team1.jpg" alt="Team Icon" class="team-icon" style="width: 120px; height: 120px; margin-top: auto;">
+        </div>
+        <div class="team-card" data-team-id="2">
+            <h2>Team 2</h2>
+            <p>RCB</p>
+            <img src="../team-logo/team2.jpg" alt="Team Icon" class="team-icon" style="width: 120px; height: 120px; margin-top: auto;">
+        </div>
+        <div class="team-card" data-team-id="3">
+            <h2>Team 3</h2>
+            <p>RR</p>
+            <img src="../team-logo/team3.jpg" alt="Team Icon" class="team-icon" style="width: 120px; height: 120px; margin-top: auto;">
+        </div>
+    </div>
+
+    <script> // JavaScript to handle card click event
+        const teamCards = document.querySelectorAll('.team-card');
+       
+        teamCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Get the team ID from the data attribute
+                const teamId = card.getAttribute('data-team-id');
+       
+                // Redirect to the team details page with the team ID
+                window.location.href = `index.html`;
+            });
+        });
+       </script>
+</body>
+</html>

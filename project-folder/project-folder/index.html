@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Cricket Teams</title>
+</head>
+<body>
+    <div class="flex-this">
+        <div class="team-details">
+            <img src="../team-logo/team1.jpg" alt="Team Icon" class="team-icon">
+            <h1>MI</h1>
+            <p>Player Count: 05</p>
+            <p>Top Batsman:  Rohit Sharma</p>
+            <p>Top Bowler: jasprith Bumraha</p>
+            <p>Championships Won: 5</p>
+        </div>
+        <div class="team-details">
+            <img src="../team-logo/team2.jpg" alt="Team Icon" class="team-icon">
+            <h1>RCB</h1>
+            <p>Player Count:03 </p>
+            <p>Top Batsman:Virat Kohli</p>
+            <p>Top Bowler: Siraj</p>
+        <p>Championships Won: 01</p>
+        </div>
+        <div class="team-details">
+            <img src="../team-logo/team3.jpg" alt="Team Icon" class="team-icon">
+            <h1>RR</h1>
+            <p>Player Count: 02</p>
+            <p>Top Batsman: Sanju Samson</p>
+            <p>Top Bowler: chris Moris</p>
+            <p>Championships Won: 01</p>
+        </div>
+    </div>
+
+    <h1>Welcome to Cricket Players</h1>
+
+    <div class="search-bar">
+        <input type="text" id="team-code-input" placeholder="Enter Team Code">
+        <button onclick="searchPlayers()">Search</button>
+    </div>
+
+    <div class="player-grid" id="player-grid">
+        <!-- Players will be dynamically added here using JavaScript -->
+    </div>
+
+    <h2>Add New Player</h2>
+    <form id="add-player-form">
+        <input type="text" id="player-name-input" placeholder="Player Name">
+        <input type="text" id="player-from-input" placeholder="Team">
+        <input type="text" id="player-price-input" placeholder="Price">
+        <input type="checkbox" id="is-playing-input"> Playing
+        <input type="text" id="player-description-input" placeholder="Description">
+        <button type="button" onclick="addNewPlayer()">Add Player</button>
+    </form>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
